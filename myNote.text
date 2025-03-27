@@ -1,37 +1,12 @@
 Day 001
 https://github.com/nautobot/100-days-of-nautobot/blob/main/Day001_Development_Setup/README.md
-
+start github codespace
 @nnaoprai
 $ cd nautobot-docker-compose/   -> @nnaoprai ➜ ~/nautobot-docker-compose (main)
 poetry shell  ->  (nautobot-docker-compose-py3.10) @nnaoprai ➜ ~/nautobot-docker-compose (main) 
-invoke debug  ->  https://silver-succotash-v6wggp644vjrf4xw-8080.app.github.dev
+invoke debug  ->  https://silver-succotash-v6wggp644vjrf4xw-8080.app.github.dev 
+user : admin, password: admin
 ---------------------------------------------------------------------------------------------
-setup 
----------------------------------------------------------------------------------------------
-invoke db-import
---
-docker images
 
-REPOSITORY                         TAG         IMAGE ID       CREATED        SIZE
-yourrepo/nautobot-docker-compose   local       4fb75695abb3   7 days ago     1.12GB
-postgres                           13-alpine   5de4caba4b9e   4 weeks ago    268MB
-redis                              6-alpine    6dd588768b9b   2 months ago   30.2MB
-
-docker ps --during run the webserver--
-CONTAINER ID   IMAGE                                    COMMAND                  CREATED      STATUS                        PORTS                                                 NAMES
-633d289dd47e   yourrepo/nautobot-docker-compose:local   "sh -c 'nautobot-ser…"   7 days ago   Up About a minute (healthy)   8080/tcp, 8443/tcp                                    nautobot_docker_compose-celery_worker-1
-8527da02ceca   yourrepo/nautobot-docker-compose:local   "sh -c 'nautobot-ser…"   7 days ago   Up About a minute             8080/tcp, 8443/tcp                                    nautobot_docker_compose-celery_beat-1
-7dbab92093f1   yourrepo/nautobot-docker-compose:local   "/docker-entrypoint.…"   7 days ago   Up About a minute (healthy)   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 8443/tcp   nautobot_docker_compose-nautobot-1
-28527578e926   redis:6-alpine                           "docker-entrypoint.s…"   7 days ago   Up About a minute             6379/tcp                                              nautobot_docker_compose-redis-1
-989f38de749c   postgres:13-alpine                       "docker-entrypoint.s…"   7 days ago   Up About a minute (healthy)   5432/tcp                                              nautobot_docker_compose-db-1
-
-docker ps --stop server--
-CONTAINER ID   IMAGE                                    COMMAND                  CREATED      STATUS                   PORTS                                                 NAMES
-7dbab92093f1   yourrepo/nautobot-docker-compose:local   "/docker-entrypoint.…"   7 days ago   Up 3 minutes (healthy)   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 8443/tcp   nautobot_docker_compose-nautobot-1
-28527578e926   redis:6-alpine                           "docker-entrypoint.s…"   7 days ago   Up 3 minutes             6379/tcp                                              nautobot_docker_compose-redis-1
-989f38de749c   postgres:13-alpine                       "docker-entrypoint.s…"   7 days ago   Up 3 minutes (healthy)   5432/tcp                                              nautobot_docker_compose-db-1
-
-docker ps --stop for long time will show blank result--
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
 
