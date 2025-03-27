@@ -1,14 +1,10 @@
 Day 001
+https://github.com/nautobot/100-days-of-nautobot/blob/main/Day001_Development_Setup/README.md
+
 @nnaoprai
 $ cd nautobot-docker-compose/   -> @nnaoprai ➜ ~/nautobot-docker-compose (main)
-poetry shell  ->
-invoke build  -> (nautobot-docker-compose-py3.10) @nnaoprai ➜ ~/nautobot-docker-compose (main) 
-
-
-
-invoke debug
-
-https://silver-succotash-v6wggp644vjrf4xw-8080.app.github.dev
+poetry shell  ->  (nautobot-docker-compose-py3.10) @nnaoprai ➜ ~/nautobot-docker-compose (main) 
+invoke debug  ->  https://silver-succotash-v6wggp644vjrf4xw-8080.app.github.dev
 ---------------------------------------------------------------------------------------------
 setup 
 ---------------------------------------------------------------------------------------------
